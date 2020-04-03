@@ -1,0 +1,198 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+
+#particles-js {
+  height: 628px;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  background: url("../images/header_bg.png");
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+.main-container .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 628px;
+  overflow: hidden;
+}
+.main-container .header #demo-canvas {
+  display: none;
+}
+.main-container .header-welcome {
+  font-size: 48px;
+  line-height: 150px;
+  color: white;
+}
+.main-container .header-mpo {
+  font-size: 150px;
+  line-height: 150px;
+  color: white;
+}
+.main-container .header-banner {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  font-style: normal;
+  color: white;
+  margin-bottom: 50px;
+}
+.main-container .header-button_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50vw;
+}
+.main-container .header-button_container .header-button {
+  background-color: rgba(0, 148, 255, 0.3);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  color: white;
+  height: 100px;
+  width: 360px;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: bold;
+  border: solid 0px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.main-container .header-button_container .header-button:hover {
+  border: solid 1px #fff;
+  border-radius: 30px;
+  text-decoration: underline;
+  background-color: rgba(0, 148, 255, 0.8);
+}
+.main-container .template-container {
+  background-color: white;
+  height: 250vh;
+}
+.main-container .template-container-header {
+  text-align: center;
+  font-weight: bold;
+  line-height: 42px;
+  font-size: 36px;
+  font-style: normal;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.main-container .template-container-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+}
+.main-container .template-container .template-image {
+  cursor: pointer;
+  overflow: hidden;
+  margin-bottom: 50px;
+  position: relative;
+  flex-shrink: 2;
+}
+.main-container .template-container .template-image h3 {
+  text-align: center;
+  margin-top: 20px;
+}
+.main-container .template-container .template-image img {
+  height: 425px;
+  width: 480px;
+  transition: transform 0.2s ease-in-out;
+  border: solid 1px #000;
+}
+.main-container .template-container .template-image:hover img {
+  transform: scale(1.05);
+}
+.main-container .template-container .template-image:hover .overlay {
+  opacity: 1;
+}
+.main-container .template-container .template-image .overlay {
+  height: 433px;
+  width: 480px;
+  background-color: rgba(1, 67, 134, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.main-container .template-container .template-image .overlay-button {
+  background-color: #000e23;
+  height: 85px;
+  width: 225px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+  font-style: normal;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.3s ease;
+}
+.main-container .template-container .template-image .overlay-button:hover {
+  text-decoration: underline;
+  border: solid 1px #fff;
+}
+.main-container .template-container .template-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-container .template-container .template-modal-image {
+  margin: auto;
+}
+.main-container .template-container .template-modal-image img {
+  height: 80vh;
+  width: auto;
+}
+.main-container .footer {
+  background-color: #000e24;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85px;
+}
+.main-container .footer-text {
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    background-color: black;
+  }
+  .header-welcome {
+    font-size: 14px;
+  }
+  .header-mpo {
+    font-size: 14px;
+  }
+  .header-banner {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
