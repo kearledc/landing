@@ -29,9 +29,7 @@ html {
   height: 628px;
   overflow: hidden;
 }
-.main-container .header #demo-canvas {
-  display: none;
-}
+
 .main-container .header-welcome {
   font-size: 48px;
   line-height: 150px;
