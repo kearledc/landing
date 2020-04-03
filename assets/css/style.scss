@@ -10,25 +10,29 @@ html {
 }
 
 
-// #particles-js {
-// 	height: 628px;
-// 	// position: absolute;
-// 	background-color: black;
-// 	// position: relative;
-// }
+#particles-js {
+  height: 628px;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background: url("../images/header_bg.png");
+}
 
 .main-container {
 	// position: absolute;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	.header {
-		background: url('../images/header_bg.png');
+		margin-top: 70px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
-		height: 628px;
+		height: 500px;
 		overflow: hidden;
+		width: 50vw;
+		z-index: 1;
 		#demo-canvas {
 			display: none;
 		}
@@ -37,12 +41,14 @@ html {
 			font-size: 48px;
 			line-height: 150px;
 			color: white;
+			z-index: 2;
 		}
 
 		&-mpo {
 			font-size: 150px;
 			line-height: 150px;
 			color: white;
+			z-index: 2;
 		}
 
 		&-banner {
@@ -52,6 +58,7 @@ html {
 			font-style: normal;	
 			color: white;
 			margin-bottom: 50px;
+			z-index: 2;
 		}
 
 		&-button_container {
@@ -77,7 +84,6 @@ html {
 				&:hover {
 					border: solid 1px #fff;
 					border-radius: 30px;
-					text-decoration: underline;
 					background-color: rgba(0, 148, 255, 0.8);
 
 				}
@@ -94,7 +100,7 @@ html {
 			line-height: 42px;
 			font-size: 36px;
 			font-style: normal;
-			margin-top: 60px;
+			margin-top: 100px;
 			margin-bottom: 30px;
 		}
 		&-gallery {
@@ -110,7 +116,6 @@ html {
 			overflow: hidden;
 			margin-bottom: 50px;
 			position: relative;
-			// flex-grow: 2;
 			flex-shrink: 2;
 			h3 {
 				text-align: center;
@@ -161,7 +166,6 @@ html {
 					transition: 0.3s ease;
 
 					&:hover {
-						text-decoration: underline;
 						border: solid 1px #fff;
 					}
 				}

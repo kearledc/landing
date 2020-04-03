@@ -1,7 +1,7 @@
 {
 	"particles":{
 		"number":{
-			"value": 150
+			"value": 180
 		},
 		"color":{
 			"value": "#fff"
@@ -49,7 +49,8 @@
 				}
 			},
 			"bubble":{
-				"size": 10
+				"size": 15,
+				"duration": 5
 			}
 		}
 	}
