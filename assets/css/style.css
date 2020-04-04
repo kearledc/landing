@@ -393,6 +393,79 @@ html {
     font-size: 14px;
   }
 }
+@media (max-width: 375px) {
+  #particles-js {
+    height: 100vh;
+    background: center center/cover url("../images/header_bg.png");
+  }
+
+  .main-container .header {
+    width: 90vw;
+    padding: 15px;
+    height: 90vh;
+    margin-top: 40px;
+  }
+  .main-container .header-welcome {
+    line-height: 0px;
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+  .main-container .header-mpo {
+    font-size: 65px;
+  }
+  .main-container .header-banner {
+    font-size: 16px;
+    text-align: center;
+  }
+  .main-container .header-button_container {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .main-container .header-button_container .header-button {
+    height: 80px;
+    width: 250px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .main-container .template-container {
+    height: 575vh;
+    margin-top: 40px;
+  }
+  .main-container .template-container-header {
+    font-size: 24px;
+    margin-top: 0px;
+  }
+  .main-container .template-container-gallery {
+    flex-direction: column;
+    height: auto;
+  }
+  .main-container .template-container-gallery .template-image {
+    width: 320px;
+  }
+  .main-container .template-container-gallery .template-image img {
+    width: inherit;
+    height: 300px;
+  }
+  .main-container .template-container-gallery .template-image .overlay {
+    height: 310px;
+    flex-direction: column;
+    width: inherit;
+  }
+  .main-container .template-container-gallery .template-image .overlay-button {
+    width: 140px;
+    height: 60px;
+    font-size: 12px;
+  }
+  .main-container .footer {
+    margin-top: 100px;
+    padding: 10px;
+    width: 100%;
+  }
+  .main-container .footer h4 {
+    font-size: 14px;
+    text-align: center;
+  }
+}
 @media (max-width: 320px) {
   #particles-js {
     height: 100vh;

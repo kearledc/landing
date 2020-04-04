@@ -236,6 +236,90 @@
 	}
 }
 
+@media (max-width: 375px) {
+	#particles-js {
+		height: 100vh;
+		background: center center/cover url('../images/header_bg.png');
+	}
+
+	.main-container {
+		.header {
+			width: 90vw;
+			padding: 15px;
+			height: 90vh;
+			margin-top: 40px;
+			&-welcome {
+				line-height: 0px;
+				text-transform: uppercase;
+				font-size: 24px;
+			}
+
+			&-mpo {
+				font-size: 65px;
+			}
+
+			&-banner {
+				font-size: 16px;
+				text-align: center;
+			}
+
+			&-button_container {
+				flex-direction: column;
+				justify-content: space-evenly;
+
+				.header-button {
+					height: 80px;
+					width: 250px;
+					margin-bottom: 10px;
+					font-size: 20px;
+				}
+			}
+		}
+		
+		.template-container {
+			height: 575vh;
+			margin-top: 40px;
+			&-header {
+				font-size: 24px;
+				margin-top: 0px;
+			}
+			&-gallery {
+				flex-direction: column;
+				height: auto;
+				.template-image {
+					width: 320px;
+					& img {
+						width: inherit;
+						height: 300px;
+					}
+					.overlay {
+						height: 310px;
+						flex-direction: column;
+						width: inherit;
+						&-button {
+							width: 140px;
+							height: 60px;
+							font-size: 12px;
+						}
+					}
+				}
+			}			
+		}
+
+		.footer {
+			margin-top: 100px;
+			padding: 10px;
+			width: 100%;
+			& h4 {
+				font-size: 14px;
+				text-align: center;
+			}
+		}
+	}
+}
+
+
+
 @media (max-width: 320px) {
 	#particles-js {
 		height: 100vh;
