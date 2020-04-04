@@ -49,7 +49,7 @@
 				}
 			},
 			"bubble":{
-				"size": 15,
+				"size": 10,
 				"duration": 5
 			}
 		}

@@ -33,9 +33,6 @@ html {
   width: 50vw;
   z-index: 1;
 }
-.main-container .header #demo-canvas {
-  display: none;
-}
 .main-container .header-welcome {
   font-size: 48px;
   line-height: 150px;
@@ -99,7 +96,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-content: center;
 }
 .main-container .template-container .template-image {
@@ -107,15 +104,15 @@ html {
   overflow: hidden;
   margin-bottom: 50px;
   position: relative;
-  flex-shrink: 2;
+  width: 400px;
 }
 .main-container .template-container .template-image h3 {
   text-align: center;
   margin-top: 20px;
 }
 .main-container .template-container .template-image img {
-  height: 425px;
-  width: 480px;
+  height: 400px;
+  width: inherit;
   transition: transform 0.2s ease-in-out;
   border: solid 1px #000;
 }
@@ -126,8 +123,8 @@ html {
   opacity: 1;
 }
 .main-container .template-container .template-image .overlay {
-  height: 433px;
-  width: 480px;
+  height: 410px;
+  width: inherit;
   background-color: rgba(1, 67, 134, 0.8);
   position: absolute;
   top: 0;
@@ -176,6 +173,7 @@ html {
   align-items: center;
   justify-content: center;
   height: 85px;
+  width: 100%;
 }
 .main-container .footer-text {
   font-size: 18px;
@@ -185,17 +183,285 @@ html {
   font-style: normal;
 }
 
-@media screen and (max-width: 320px) {
-  .header {
-    background-color: black;
+@media (max-width: 1024px) {
+  .main-container .header {
+    width: 60vw;
+    padding: 15px;
+    height: 90vh;
+    margin-top: 40px;
   }
-  .header-welcome {
+  .main-container .header-welcome {
+    line-height: 0px;
+    text-transform: uppercase;
+    font-size: 36px;
+  }
+  .main-container .header-mpo {
+    font-size: 120px;
+  }
+  .main-container .header-banner {
+    font-size: 16px;
+    text-align: center;
+  }
+  .main-container .header-button_container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: inherit;
+  }
+  .main-container .header-button_container .header-button {
+    height: 80px;
+    width: 250px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .main-container .template-container {
+    height: 180vh;
+    margin-top: -10px;
+  }
+  .main-container .template-container-header {
+    font-size: 36px;
+    margin-top: 0px;
+  }
+  .main-container .template-container-gallery {
+    flex-direction: row;
+    height: auto;
+  }
+  .main-container .template-container-gallery .template-image {
+    width: 300px;
+  }
+  .main-container .template-container-gallery .template-image img {
+    width: inherit;
+    height: 300px;
+  }
+  .main-container .template-container-gallery .template-image .overlay {
+    height: 310px;
+    flex-direction: row;
+    width: inherit;
+  }
+  .main-container .template-container-gallery .template-image .overlay-button {
+    width: 120px;
+    height: 60px;
+    font-size: 12px;
+  }
+  .main-container .footer {
+    margin-top: 100px;
+    width: 100%;
+  }
+  .main-container .footer h4 {
     font-size: 14px;
   }
-  .header-mpo {
+}
+@media (max-width: 768px) {
+  #particles-js {
+    height: 100vh;
+    background: center center/cover url("../images/header_bg.png");
+  }
+
+  .main-container .header {
+    width: 70vw;
+    padding: 15px;
+    height: 90vh;
+    margin-top: 40px;
+  }
+  .main-container .header-welcome {
+    line-height: 0px;
+    text-transform: uppercase;
+    font-size: 36px;
+  }
+  .main-container .header-mpo {
+    font-size: 120px;
+  }
+  .main-container .header-banner {
+    font-size: 16px;
+    text-align: center;
+  }
+  .main-container .header-button_container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: inherit;
+  }
+  .main-container .header-button_container .header-button {
+    height: 80px;
+    width: 250px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .main-container .template-container {
+    height: 520vh;
+    margin-top: 40px;
+  }
+  .main-container .template-container-header {
+    font-size: 24px;
+    margin-top: 0px;
+  }
+  .main-container .template-container-gallery {
+    flex-direction: row;
+    height: auto;
+  }
+  .main-container .template-container-gallery .template-image {
+    width: 350px;
+  }
+  .main-container .template-container-gallery .template-image img {
+    width: inherit;
+    height: 300px;
+  }
+  .main-container .template-container-gallery .template-image .overlay {
+    height: 310px;
+    flex-direction: column;
+    width: inherit;
+  }
+  .main-container .template-container-gallery .template-image .overlay-button {
+    width: 140px;
+    height: 60px;
+    font-size: 12px;
+  }
+  .main-container .footer {
+    margin-top: 100px;
+    width: 100%;
+  }
+  .main-container .footer h4 {
     font-size: 14px;
   }
-  .header-banner {
+}
+@media (max-width: 425px) {
+  #particles-js {
+    height: 100vh;
+    background: center center/cover url("../images/header_bg.png");
+  }
+
+  .main-container .header {
+    width: 80vw;
+    padding: 15px;
+    height: 90vh;
+    margin-top: 40px;
+  }
+  .main-container .header-welcome {
+    line-height: 0px;
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+  .main-container .header-mpo {
+    font-size: 65px;
+  }
+  .main-container .header-banner {
+    font-size: 16px;
+    text-align: center;
+  }
+  .main-container .header-button_container {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .main-container .header-button_container .header-button {
+    height: 80px;
+    width: 250px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .main-container .template-container {
+    height: 520vh;
+    margin-top: 40px;
+  }
+  .main-container .template-container-header {
+    font-size: 24px;
+    margin-top: 0px;
+  }
+  .main-container .template-container-gallery {
+    flex-direction: column;
+    height: auto;
+  }
+  .main-container .template-container-gallery .template-image {
+    width: 350px;
+  }
+  .main-container .template-container-gallery .template-image img {
+    width: inherit;
+    height: 300px;
+  }
+  .main-container .template-container-gallery .template-image .overlay {
+    height: 310px;
+    flex-direction: column;
+    width: inherit;
+  }
+  .main-container .template-container-gallery .template-image .overlay-button {
+    width: 140px;
+    height: 60px;
+    font-size: 12px;
+  }
+  .main-container .footer {
+    margin-top: 100px;
+    width: 100%;
+  }
+  .main-container .footer h4 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 320px) {
+  #particles-js {
+    height: 100vh;
+    background: center center/cover url("../images/header_bg.png");
+  }
+
+  .main-container .header {
+    width: 90vw;
+    padding: 15px;
+    height: 90vh;
+    margin-top: 40px;
+  }
+  .main-container .header-welcome {
+    line-height: 0px;
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+  .main-container .header-mpo {
+    font-size: 60px;
+  }
+  .main-container .header-banner {
+    font-size: 16px;
+    text-align: center;
+  }
+  .main-container .header-button_container {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .main-container .header-button_container .header-button {
+    height: 80px;
+    width: 250px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .main-container .template-container {
+    height: 520vh;
+    margin-top: 40px;
+  }
+  .main-container .template-container-header {
+    font-size: 24px;
+    margin-top: 0px;
+  }
+  .main-container .template-container-gallery {
+    flex-direction: column;
+    height: auto;
+  }
+  .main-container .template-container-gallery .template-image {
+    width: 250px;
+  }
+  .main-container .template-container-gallery .template-image img {
+    width: inherit;
+    height: 300px;
+  }
+  .main-container .template-container-gallery .template-image .overlay {
+    height: 310px;
+    flex-direction: column;
+    width: inherit;
+  }
+  .main-container .template-container-gallery .template-image .overlay-button {
+    width: 140px;
+    height: 60px;
+    font-size: 12px;
+  }
+  .main-container .footer {
+    margin-top: 100px;
+    width: 100%;
+  }
+  .main-container .footer h4 {
+    text-align: center;
     font-size: 14px;
   }
 }

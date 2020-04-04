@@ -1,0 +1,96 @@
+.template-container	{
+	background-color: white;
+	height: 250vh;
+	&-header {
+		text-align: center;
+		font-weight: bold;
+		line-height: 42px;
+		font-size: 36px;
+		font-style: normal;
+		margin-top: 100px;
+		margin-bottom: 30px;
+	}
+	&-gallery {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-evenly;
+		align-content: center;
+	}
+	
+	.template-image {
+		cursor: pointer;
+		overflow: hidden;
+		margin-bottom: 50px;
+		position: relative;
+		width: 400px;
+		h3 {
+			text-align: center;
+			margin-top: 20px;
+		}
+
+		img{
+			height: 400px;
+			width: inherit;
+			transition: transform 0.2s ease-in-out; 
+			border: solid 1px #000;
+		}
+
+		&:hover img {
+			transform: scale(1.05);
+		}
+		&:hover .overlay {
+			opacity: 1;
+		}
+		
+		.overlay {
+			height: 410px;
+			width: inherit;
+			background-color: rgba(1, 67, 134, 0.8);
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0;
+			transition: 0.4s ease;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			z-index: 2;
+			&-button {
+				background-color: #000e23;
+				height: 85px;
+				width: 225px;
+				border: 1px solid #000;
+				border-radius: 10px;
+				box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+				color: #fff;
+				font-size: 24px;
+				line-height: 28px;
+				font-weight: bold;
+				font-style: normal;
+				cursor: pointer;
+				margin: 10px;
+				transition: 0.3s ease;
+
+				&:hover {
+					border: solid 1px #fff;
+				}
+			}
+		}
+	}
+	
+	.template-modal-header{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.template-modal-image {
+		margin: auto;
+		img {
+			height: 80vh;
+			width: auto;
+		}
+	}
+
+}
