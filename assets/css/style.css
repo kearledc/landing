@@ -79,9 +79,83 @@ html {
   border-radius: 30px;
   background-color: rgba(0, 148, 255, 0.8);
 }
+.main-container .popup-contact-us .modal-contact-us {
+  background-color: #000e24;
+  color: #fff;
+  border-radius: 25px;
+  padding: 0 20px 20px;
+}
+.main-container .popup-contact-us .modal-contact-us .modal-header {
+  border-bottom: solid 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-container .popup-contact-us .modal-contact-us .modal-header h5 {
+  font-size: 36px;
+}
+.main-container .popup-contact-us .modal-contact-us .modal-body .modal-body-form {
+  padding: 10px 0 0;
+}
+.main-container .popup-contact-us .modal-contact-us .modal-body .modal-body-form h3 {
+  font-size: 14px;
+  text-align: center;
+}
+.main-container .popup-contact-us .modal-contact-us .modal-body .modal-body-form .form-item {
+  margin-bottom: 10px;
+}
+.main-container .popup-contact-us .modal-contact-us .modal-body .modal-body-form .form-item .item-title {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+}
+.main-container .popup-contact-us .modal-contact-us .modal-body .modal-body-form .form-item .item-title span {
+  color: red;
+}
+.main-container .popup-contact-us .modal-contact-us .modal-body .modal-body-form .form-item input {
+  width: 100%;
+  outline: none;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+.main-container .popup-contact-us .modal-contact-us .modal-body .modal-body-form .form-item textarea {
+  width: 100%;
+  outline: none;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+.main-container .popup-contact-us .modal-contact-us .modal-body .modal-body-form .modal-contact-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.main-container .popup-contact-us .modal-contact-us .modal-body .modal-body-form .modal-contact-buttons .contact-submit {
+  width: 100%;
+  background-color: #ffe500;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  border: 0px;
+  height: 55px;
+}
+.main-container .popup-contact-us .modal-contact-us .modal-body .modal-body-form .modal-contact-buttons .contact-close {
+  width: 100%;
+  background-color: #e8e8e8;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  height: 55px;
+  border: 0px;
+  margin-top: 10px;
+}
 .main-container .template-container {
   background-color: white;
-  height: 250vh;
+  height: 280vh;
 }
 .main-container .template-container-header {
   text-align: center;
@@ -115,15 +189,18 @@ html {
   width: inherit;
   transition: transform 0.2s ease-in-out;
   border: solid 1px #000;
+  border-radius: 5px;
+  padding: 10px;
 }
 .main-container .template-container .template-image:hover img {
   transform: scale(1.05);
+  border: 0px solid;
 }
 .main-container .template-container .template-image:hover .overlay {
   opacity: 1;
 }
 .main-container .template-container .template-image .overlay {
-  height: 410px;
+  height: 400px;
   width: inherit;
   background-color: rgba(1, 67, 134, 0.8);
   position: absolute;
@@ -135,6 +212,7 @@ html {
   align-items: center;
   justify-content: center;
   z-index: 2;
+  border-radius: 5px;
 }
 .main-container .template-container .template-image .overlay-button {
   background-color: #000e23;
@@ -155,17 +233,30 @@ html {
 .main-container .template-container .template-image .overlay-button:hover {
   border: solid 1px #fff;
 }
-.main-container .template-container .template-modal-header {
+.main-container .template-container .modal-template .template-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: solid 0px;
+}
+.main-container .template-container .modal-template .template-modal-image {
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.main-container .template-container .template-modal-image {
-  margin: auto;
-}
-.main-container .template-container .template-modal-image img {
+.main-container .template-container .modal-template .template-modal-image img {
   height: 80vh;
-  width: auto;
+  width: 90%;
+}
+.main-container .template-container .modal-template-content {
+  margin: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000e24;
+  color: #fff;
+  border-radius: 25px;
 }
 .main-container .footer {
   background-color: #000e24;
@@ -214,7 +305,7 @@ html {
     font-size: 20px;
   }
   .main-container .template-container {
-    height: 180vh;
+    height: 230vh;
     margin-top: -10px;
   }
   .main-container .template-container-header {
@@ -286,7 +377,7 @@ html {
     font-size: 20px;
   }
   .main-container .template-container {
-    height: 520vh;
+    height: 300vh;
     margin-top: 40px;
   }
   .main-container .template-container-header {
@@ -357,7 +448,7 @@ html {
     font-size: 20px;
   }
   .main-container .template-container {
-    height: 520vh;
+    height: 600vh;
     margin-top: 40px;
   }
   .main-container .template-container-header {
@@ -384,6 +475,13 @@ html {
     width: 140px;
     height: 60px;
     font-size: 12px;
+  }
+  .main-container .modal .modal-template-content {
+    margin-top: 50px;
+  }
+  .main-container .modal .modal-template-content .template-modal-image img {
+    height: 50vh;
+    width: auto;
   }
   .main-container .footer {
     margin-top: 100px;
@@ -428,7 +526,7 @@ html {
     font-size: 20px;
   }
   .main-container .template-container {
-    height: 575vh;
+    height: 620vh;
     margin-top: 40px;
   }
   .main-container .template-container-header {
@@ -455,6 +553,13 @@ html {
     width: 140px;
     height: 60px;
     font-size: 12px;
+  }
+  .main-container .modal .modal-template-content {
+    margin-top: 50px;
+  }
+  .main-container .modal .modal-template-content .template-modal-image img {
+    height: 50vh;
+    width: auto;
   }
   .main-container .footer {
     margin-top: 100px;
@@ -501,7 +606,7 @@ html {
     font-size: 20px;
   }
   .main-container .template-container {
-    height: 520vh;
+    height: 600vh;
     margin-top: 40px;
   }
   .main-container .template-container-header {
@@ -528,6 +633,13 @@ html {
     width: 140px;
     height: 60px;
     font-size: 12px;
+  }
+  .main-container .modal .modal-template-content {
+    margin-top: 50px;
+  }
+  .main-container .modal .modal-template-content .template-modal-image img {
+    height: 50vh;
+    width: auto;
   }
   .main-container .footer {
     margin-top: 100px;

@@ -34,7 +34,7 @@
 		}
 
 		.template-container {
-			height: 180vh;
+			height: 230vh;
 			margin-top: -10px;
 			&-header {
 				font-size: 36px;
@@ -116,7 +116,7 @@
 		}
 		
 		.template-container {
-			height: 520vh;
+			height: 300vh;
 			margin-top: 40px;
 			&-header {
 				font-size: 24px;
@@ -197,7 +197,7 @@
 		}
 		
 		.template-container {
-			height: 520vh;
+			height: 600vh;
 			margin-top: 40px;
 			&-header {
 				font-size: 24px;
@@ -224,6 +224,16 @@
 					}
 				}
 			}			
+		}
+
+		.modal {
+			.modal-template-content{
+				margin-top: 50px;
+				.template-modal-image img {
+					height: 50vh;
+					width: auto;
+				}
+			}
 		}
 
 		.footer {
@@ -277,7 +287,7 @@
 		}
 		
 		.template-container {
-			height: 575vh;
+			height: 620vh;
 			margin-top: 40px;
 			&-header {
 				font-size: 24px;
@@ -304,6 +314,16 @@
 					}
 				}
 			}			
+		}
+		
+		.modal {
+			.modal-template-content{
+				margin-top: 50px;
+				.template-modal-image img {
+					height: 50vh;
+					width: auto;
+				}
+			}
 		}
 
 		.footer {
@@ -361,7 +381,7 @@
 		}
 
 		.template-container {
-			height: 520vh;
+			height: 600vh;
 			margin-top: 40px;
 			&-header {
 				font-size: 24px;
@@ -389,6 +409,17 @@
 				}
 			}			
 		}
+
+		.modal {
+			.modal-template-content{
+				margin-top: 50px;
+				.template-modal-image img {
+					height: 50vh;
+					width: auto;
+				}
+			}
+		}
+
 		
 		.footer {
 			margin-top: 100px;

@@ -27,38 +27,50 @@
 		</div>
 
 		<!-- Contact Us Modal -->
-		<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="contact-modal">
-		  <div class="modal-dialog modal-lg" role="document">
-		    <div class="modal-content">
+		<div class="modal fade popup-contact-us" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content modal-contact-us">
 		      <div class="modal-header">
-		      	<h4>Contact Us</h4>
-		      	<p>Please fill out the form below our customer service will contact back</p>
+		        <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
 		      </div>
 		      <div class="modal-body">
-		      	<div class="modal-item">
-		      		<label for="name">Full Name:</label>
-		      		<input type="text" class="contactus-input">
-		      	</div>
+		        <div class="modal-body-form">
+		        	<h3>Please fill out the form below our customer service will contact back</h3>
+		        	<div class="form-item">
+			        	<div class="item-title">Full Name<span>*</span></div>
+			        	<input type="text">
+					</div>
 
-		      	<div class="modal-item">
-		      		<label for="name">Full Name:</label>
-		      		<input type="text" class="contactus-input">
-		      	</div>
+					<div class="form-item">
+			        	<div class="item-title">Email<span>*</span></div>
+			        	<input type="email">
+		        	</div>
 
-		      	<div class="modal-item">
-		      		<label for="name">Full Name:</label>
-		      		<input type="text" class="contactus-input">
-		      	</div>
+					<div class="form-item">
+			        	<div class="item-title">Phone Number<span>*</span></div>
+			        	<input type="text">
+		        	</div>
 
-		      	<div class="modal-item">
-		      		<label for="name">Full Name:</label>
-		      		<input type="text" class="contactus-input">
-		      	</div>
+					<div class="form-item">
+			        	<div class="item-title">Company Name<span>*</span></div>
+			        	<input type="text">
+		        	</div>
 
-		      	<div class="modal-item">
-		      		<label for="name">Inquiry Description</label>
-		      		<textarea name="comments" id="" cols="30" rows="10"></textarea>
-		      	</div>
+					<div class="form-item">
+			        	<div class="item-title">Inquiry Description<span>*</span></div>
+			        	<textarea name="" id="" cols="20" rows="3"></textarea>
+		        	</div>
+
+		        	<div class="form-item">
+		        		<div class="item-title">Captcha<span>*</span></div>
+		        		<input type="text">
+		        	</div>
+					
+					<div class="modal-contact-buttons">
+						<button type="button" class="contact-submit" >Submit</button>
+						<button type="button" data-dismiss="modal" class="contact-close">Close</button>
+					</div>
+		        </div>
 		      </div>
 		    </div>
 		  </div>
@@ -72,18 +84,18 @@
 						<button class="overlay-button" id="previewModal1" data-toggle="modal" data-target="#preview-modal-template1">Preview</button>
 						<button class="overlay-button">Live Demo</button>
 					</div>
-					<img src="./assets/images/template1.png" alt="">
+					<img src="./assets/images/template6.png" alt="Template 1">
 					<h3>Template # 1</h3>
 				</div>
 				
-				<div class="modal fade bd-example-modal-xl" id="preview-modal-template1" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-				  <div class="modal-dialog modal-xl" role="document">		
-				    <div class="modal-content">
+				<div class="modal fade bd-example-modal-lg modal-template" id="preview-modal-template1" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg" role="document">		
+				    <div class="modal-content modal-template-content">
 				      <div class="modal-header template-modal-header">
 				      	<h2>Template # 1</h2>
 				      </div>
 				      <div class="modal-body template-modal-image">
-				      	<img src="./assets/images/template1.png" alt="">
+				      	<img src="./assets/images/temp/Temp1.jpg" alt="Template 2">
 				      </div>
 				    </div>
 				  </div>
@@ -94,18 +106,18 @@
 						<button class="overlay-button" data-toggle="modal" data-target="#preview-modal-template2">Preview</button>
 						<button class="overlay-button">Live Demo</button>
 					</div>
-					<img src="./assets/images/template2.png" alt="">
+					<img src="./assets/images/temp/Temp2.jpg" alt="">
 					<h3>Template # 2</h3>
 				</div>
 
-				<div class="modal fade bd-example-modal-xl" id="preview-modal-template2" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-				  <div class="modal-dialog modal-xl" role="document">		
-				    <div class="modal-content">
+				<div class="modal fade bd-example-modal-lg modal-template" id="preview-modal-template2" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg" role="document">		
+				    <div class="modal-content modal-template-content">
 				      <div class="modal-header template-modal-header">
 				      	<h2>Template # 2</h2>
 				      </div>
 				      <div class="modal-body template-modal-image">
-				      	<img src="./assets/images/template2.png" alt="">
+				      	<img src="./assets/images/temp/Temp2.jpg" alt="">
 				      </div>
 				    </div>
 				  </div>
@@ -116,18 +128,18 @@
 						<button class="overlay-button" data-toggle="modal" data-target="#preview-modal-template3">Preview</button>
 						<button class="overlay-button">Live Demo</button>
 					</div>
-					<img src="./assets/images/template3.png" alt="">
+					<img src="./assets/images/temp/Temp3.jpg" alt="">
 					<h3>Template # 3</h3>
 				</div>
 
-				<div class="modal fade bd-example-modal-xl" id="preview-modal-template3" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-				  <div class="modal-dialog modal-xl" role="document">		
-				    <div class="modal-content">
+				<div class="modal fade bd-example-modal-lg modal-template" id="preview-modal-template3" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg" role="document">		
+				    <div class="modal-content modal-template-content">
 				      <div class="modal-header template-modal-header">
 				      	<h2>Template # 3</h2>
 				      </div>
 				      <div class="modal-body template-modal-image">
-				      	<img src="./assets/images/template3.png" alt="">
+				      	<img src="./assets/images/temp/Temp3.jpg" alt="">
 				      </div>
 				    </div>
 				  </div>
@@ -138,18 +150,18 @@
 						<button class="overlay-button" data-toggle="modal" data-target="#preview-modal-template4">Preview</button>
 						<button class="overlay-button">Live Demo</button>
 					</div>
-					<img src="./assets/images/template4.png" alt="">
+					<img src="./assets/images/temp/Temp4.jpg" alt="">
 					<h3>Template # 4</h3>
 				</div>
 				
-				<div class="modal fade bd-example-modal-xl" id="preview-modal-template4" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-				  <div class="modal-dialog modal-xl" role="document">		
-				    <div class="modal-content">
+				<div class="modal fade bd-example-modal-lg modal-template" id="preview-modal-template4" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg" role="document">		
+				    <div class="modal-content modal-template-content">
 				      <div class="modal-header template-modal-header">
 				      	<h2>Template # 4</h2>
 				      </div>
 				      <div class="modal-body template-modal-image">
-				      	<img src="./assets/images/template4.png" alt="">
+				      	<img src="./assets/images/temp/Temp4.jpg" alt="">
 				      </div>
 				    </div>
 				  </div>
@@ -160,18 +172,18 @@
 						<button class="overlay-button" data-toggle="modal" data-target="#preview-modal-template5">Preview</button>
 						<button class="overlay-button">Live Demo</button>
 					</div>
-					<img src="./assets/images/template5.png" alt="">
+					<img src="./assets/images/temp/Temp5.jpg" alt="">
 					<h3>Template # 5</h3>
 				</div>
 
-				<div class="modal fade bd-example-modal-xl" id="preview-modal-template5" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-				  <div class="modal-dialog modal-xl" role="document">		
-				    <div class="modal-content">
+				<div class="modal fade bd-example-modal-lg modal-template" id="preview-modal-template5" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg" role="document">		
+				    <div class="modal-content modal-template-content">
 				      <div class="modal-header template-modal-header">
 				      	<h2>Template # 5</h2>
 				      </div>
 				      <div class="modal-body template-modal-image">
-				      	<img src="./assets/images/template5.png" alt="">
+				      	<img src="./assets/images/temp/Temp5.jpg" alt="">
 				      </div>
 				    </div>
 				  </div>
@@ -182,18 +194,18 @@
 						<button class="overlay-button" data-toggle="modal" data-target="#preview-modal-template6">Preview</button>
 						<button class="overlay-button">Live Demo</button>
 					</div>
-					<img src="./assets/images/template6.png" alt="">
+					<img src="./assets/images/temp/Temp6.jpg" alt="">
 					<h3>Template # 6</h3>
 				</div>
 
-				<div class="modal fade bd-example-modal-xl" id="preview-modal-template6" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-				  <div class="modal-dialog modal-xl" role="document">		
-				    <div class="modal-content">
+				<div class="modal fade bd-example-modal-lg modal-template" id="preview-modal-template6" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg" role="document">		
+				    <div class="modal-content modal-template-content">
 				      <div class="modal-header template-modal-header">
 				      	<h2>Template # 6</h2>
 				      </div>
 				      <div class="modal-body template-modal-image">
-				      	<img src="./assets/images/template6.png" alt="">
+				      	<img src="./assets/images/temp/Temp6.jpg" alt="">
 				      </div>
 				    </div>
 				  </div>
@@ -204,18 +216,18 @@
 						<button class="overlay-button" data-toggle="modal" data-target="#preview-modal-template7">Preview</button>
 						<button class="overlay-button">Live Demo</button>
 					</div>
-					<img src="./assets/images/template1.png" alt="">
+					<img src="./assets/images/temp/Temp7.jpg" alt="">
 					<h3>Template # 7</h3>
 				</div>
 				
-				<div class="modal fade bd-example-modal-xl" id="preview-modal-template7" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-				  <div class="modal-dialog modal-xl" role="document">		
-				    <div class="modal-content">
+				<div class="modal fade bd-example-modal-lg modal-template" id="preview-modal-template7" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg" role="document">		
+				    <div class="modal-content modal-template-content">
 				      <div class="modal-header template-modal-header">
 				      	<h2>Template # 7</h2>
 				      </div>
 				      <div class="modal-body template-modal-image">
-				      	<img src="./assets/images/template1.png" alt="">
+				      	<img src="./assets/images/temp/Temp7.jpg" alt="">
 				      </div>
 				    </div>
 				  </div>
@@ -226,18 +238,18 @@
 						<button class="overlay-button" data-toggle="modal" data-target="#preview-modal-template8">Preview</button>
 						<button class="overlay-button">Live Demo</button>
 					</div>
-					<img src="./assets/images/template2.png" alt="">
+					<img src="./assets/images/temp/Temp8.jpg" alt="">
 					<h3>Template # 8</h3>
 				</div>
 				
-				<div class="modal fade bd-example-modal-xl" id="preview-modal-template8" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-				  <div class="modal-dialog modal-xl" role="document">		
-				    <div class="modal-content">
+				<div class="modal fade bd-example-modal-lg modal-template" id="preview-modal-template8" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg" role="document">		
+				    <div class="modal-content modal-template-content">
 				      <div class="modal-header template-modal-header">
 				      	<h2>Template # 8</h2>
 				      </div>
 				      <div class="modal-body template-modal-image">
-				      	<img src="./assets/images/template2.png" alt="">
+				      	<img src="./assets/images/temp/Temp8.jpg" alt="">
 				      </div>
 				    </div>
 				  </div>
@@ -248,18 +260,40 @@
 						<button class="overlay-button" data-toggle="modal" data-target="#preview-modal-template9">Preview</button>
 						<button class="overlay-button">Live Demo</button>
 					</div>
-					<img src="./assets/images/template3.png" alt="">
+					<img src="./assets/images/temp/Temp9.jpg" alt="">
 					<h3>Template # 9</h3>
 				</div>
 
-				<div class="modal fade bd-example-modal-xl" id="preview-modal-template9" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-				  <div class="modal-dialog modal-xl" role="document">		
-				    <div class="modal-content">
+				<div class="modal fade bd-example-modal-lg modal-template" id="preview-modal-template9" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg" role="document">		
+				    <div class="modal-content modal-template-content">
 				      <div class="modal-header template-modal-header">
 				      	<h2>Template # 9</h2>
 				      </div>
 				      <div class="modal-body template-modal-image">
-				      	<img src="./assets/images/template3.png" alt="">
+				      	<img src="./assets/images/temp/Temp9.jpg" alt="">
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+				<div class="template-image">
+					<div class="overlay">
+						<button class="overlay-button" data-toggle="modal" data-target="#preview-modal-template9">Preview</button>
+						<button class="overlay-button">Live Demo</button>
+					</div>
+					<img src="./assets/images/temp/Temp10.jpg" alt="">
+					<h3>Template # 10</h3>
+				</div>
+
+				<div class="modal fade bd-example-modal-lg modal-template" id="preview-modal-template9" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg" role="document">		
+				    <div class="modal-content modal-template-content">
+				      <div class="modal-header template-modal-header">
+				      	<h2>Template # 10</h2>
+				      </div>
+				      <div class="modal-body template-modal-image">
+				      	<img src="./assets/images/temp/Temp10.jpg" alt="">
 				      </div>
 				    </div>
 				  </div>
